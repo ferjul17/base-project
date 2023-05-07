@@ -1,0 +1,37 @@
+{
+  "name": "bootstrap-project",
+  "packageManager": "yarn@3.6.3",
+  "engines": {
+    "node": "~20.8"
+  },
+  "scripts": {
+    "eslint": "eslint --cache --cache-location ./node_modules/.cache/eslint/.eslintcache",
+    "lint-staged": "lint-staged --allow-empty",
+    "lint:check": "yarn eslint",
+    "lint:fix": "yarn eslint --fix",
+    "prettier": "prettier --cache **/*.{js,ts,json,md,yml}",
+    "prettier:check": "yarn prettier --check",
+    "prettier:fix": "yarn prettier --write"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@tsconfig/strictest": "^2.0.2",
+    "@types/eslint": "^8.44.3",
+    "@types/micromatch": "^4.0.3",
+    "@types/node": "^20.8.2",
+    "@types/prettier": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "turbo": "^1.10.14",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  },
+  "dependencies": {
+    "micromatch": "^4.0.5"
+  }
+}

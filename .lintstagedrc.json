@@ -1,0 +1,6 @@
+{
+  "*.ts": ["yarn lint:fix"],
+  "!((node_modules/**)|(.yarn/**)|(.husky/**)|(.pnp.cjs)|(.gitignore)|(.editorconfig)|(.gitattributes)|(yarn.lock))*": [
+    "yarn prettier:fix"
+  ]
+}
